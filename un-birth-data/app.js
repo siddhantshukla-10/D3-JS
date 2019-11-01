@@ -26,7 +26,7 @@ d3.select("svg")
   .append("rect")
     .attr("width",barWidth)
     .attr("height",d => (height - yScale(d.births)))
-  .attr("y", d => (height - ((d.births / maxBirths) * height)) )
+    .attr("y", d => (height - ((d.births / maxBirths) * height)) )
     .attr("x",(d,i) => ((barWidth+barPadding) * i))
     .attr("fill","purple");
 
